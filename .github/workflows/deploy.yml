@@ -30,7 +30,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           # Dossier sur le serveur où les fichiers doivent être envoyés
           # Adaptez-le si nécessaire (ex: public_html/seti/)
-          server-dir: /seti_project/
+          server-dir: /
           # Exclure les fichiers et dossiers inutiles pour la production
           exclude: |
             **/.git*
