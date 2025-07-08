@@ -1,0 +1,40 @@
+# Nom du workflow qui apparaîtra dans l'onglet "Actions" de GitHub
+name: Deploy SETI Project to PlanetHoster
+
+# Déclencheur : ce workflow s'exécute à chaque "push" sur la branche "main"
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  # Nom du "job" (tâche)
+  ftp-deploy:
+    # Le type de machine sur lequel le job va s'exécuter
+    runs-on: ubuntu-latest
+
+    steps:
+      # Étape 1 : Récupérer le code de votre dépôt
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Étape 2 : Déployer les fichiers via FTP
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          # Adresse du serveur FTP (depuis les secrets)
+          server: ${{ secrets.FTP_SERVER }}
+          # Nom d'utilisateur FTP (depuis les secrets)
+          username: ${{ secrets.FTP_USERNAME }}
+          # Mot de passe FTP (depuis les secrets)
+          password: ${{ secrets.FTP_PASSWORD }}
+          # Dossier sur le serveur où les fichiers doivent être envoyés
+          # Adaptez-le si nécessaire (ex: public_html/seti/)
+          server-dir: /seti_project/
+          # Exclure les fichiers et dossiers inutiles pour la production
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            README.md
+            .github/**
