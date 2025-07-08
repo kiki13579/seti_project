@@ -148,7 +148,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <input type="text" id="nom" name="nom" required>
                 </div>
                 <button type="submit">Créer</button>
-                <a href="dashboard.php" class="form-group">Annuler</a>
             </form>
             <?php if ($message): ?>
                 <p class="error-message"><?php echo $message; ?></p>
