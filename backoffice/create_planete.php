@@ -128,6 +128,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             text-align: center;
             margin-bottom: 15px;
         }
+        .login-container a {
+            margin: 1rem;
+        }
     </style>
 </head>
 <body class="admin-bg">
