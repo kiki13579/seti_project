@@ -104,7 +104,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             box-shadow: 0 0 8px rgba(0, 188, 212, 0.5);
         }
 
-        .login-container button {
+        .login-container button, .login-container a{
             width: 100%;
             padding: 12px;
             font-size: 1.1em;
