@@ -129,7 +129,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             margin-bottom: 15px;
         }
         .login-container a {
-            margin: 1rem;
+            margin: 2rem;
+            justify-self: center;
+            text-align: center;
+            
         }
     </style>
 </head>
