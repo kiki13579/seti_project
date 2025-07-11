@@ -22,36 +22,36 @@ Ce projet vise à illustrer :
 
 ## 📁 Arborescence du projet
 
-- `seti_project/`
-  -  `api/`
-      - `get_planetes.php` ← Renvoie la liste des planètes en JSON
-      - `send_signal.php` ← Reçoit la requête JS et renvoie un message depuis la planète
-      - `auth/`
-        - `login_verification.php` ← Vérifie les identifiants de l’admin
-  -  `backoffice/`
-      - `create_planete.php` ← Ajouter une planète
-      - `dashboard.php` ← Interface principale de gestion
-      - `delete_message.php` ←  Supprimer un message
-      - `delte_planete.php` ← Supprimer une planète
-      - `edit_message.php` ← Modifier un message
-      - `update_planete.php` ← Modifier une planète
-  -  `includes/`
-      - `db.php` ← Fichier de connexion PDO à la base MySQL
-  -  `public/`
-      - `css/`
-        - `style.css` ← Feuilles de style pour les pages
-      - `js/`
-        - `app.js` ← Script JS pour index.html
-      - `images/`
-        - `image1.jpg` ← Fond de la page publique (index.html)
-        - `image2.png` ← Fond de la page admin (backoffice)
-  -  `script/`
-      - `register.php` ← Script d’enregistrement de l’administrateur (à supprimer après usage)
-      - `seti_project.sql` ← Fichier SQL de création des tables
-  -  `index.html` ← Page publique avec menu déroulant dynamique
-  -  `login.php` ← Formulaire de connexion de l’administrateur
-  -  `logout.php` ← Déconnexion sécurisée de la session
-  -  `README.md` ← Fichier de documentation (ce fichier)
+- `**seti_project/**`
+  -  `**api/**`
+      - `**get_planetes.php**` ← Renvoie la liste des planètes en JSON
+      - `**send_signal.php**` ← Reçoit la requête JS et renvoie un message depuis la planète
+      - `**auth/**`
+        - `**login_verification.php**` ← Vérifie les identifiants de l’admin
+  -  `**backoffice/**`
+      - `**create_planete.php**` ← Ajouter une planète
+      - `**dashboard.php**` ← Interface principale de gestion
+      - `**delete_message.php**` ←  Supprimer un message
+      - `**delte_planete.php**` ← Supprimer une planète
+      - `**edit_message.php**` ← Modifier un message
+      - `**update_planete.php**` ← Modifier une planète
+  -  `**includes/**`
+      - `**db.php**` ← Fichier de connexion PDO à la base MySQL
+  -  `**public/**`
+      - `**css/**`
+        - `**style.css**` ← Feuilles de style pour les pages
+      - `**js/**`
+        - `**app.js**` ← Script JS pour index.html
+      - `**images/**`
+        - `**image1.jpg**` ← Fond de la page publique (index.html)
+        - `**image2.png**` ← Fond de la page admin (backoffice)
+  -  `**script/**`
+      - `**register.php**` ← Script d’enregistrement de l’administrateur (à supprimer après usage)
+      - `**seti_project.sql**` ← Fichier SQL de création des tables
+  -  `**index.html**` ← Page publique avec menu déroulant dynamique
+  -  `**login.php**` ← Formulaire de connexion de l’administrateur
+  -  `**logout.php**` ← Déconnexion sécurisée de la session
+  -  `**README.md**` ← Fichier de documentation (ce fichier)
 
 
 
